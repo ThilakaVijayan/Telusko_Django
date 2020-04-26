@@ -1,0 +1,23 @@
+ls                               # to list all the files and folders in the current directory
+cd ..                            # go back one level from the current directory
+sudo pip install virtualenv
+
+cd Thilaka
+cd Python
+cd VirtualEnvironment
+virtualenv env1                  # create a Virtual Environment
+cd env1
+source bin/activate              # activate a Virtual Environment
+workon env1                      # test if this command works (bash: workon: command not found)
+
+pip freeze                       # to list the packages installed in the location or virtual VirtualEnvironment
+pip install django
+
+mkdir projects
+cd projects
+django-admin startproject telusko
+cd telusko
+python manage.py runserver       # start server
+python manage.py startapp calc   # create a new app called calc
+python manage.py startapp travello   # create a new app called travello
+
