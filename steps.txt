@@ -21,3 +21,13 @@ python manage.py runserver       # start server
 python manage.py startapp calc   # create a new app called calc
 python manage.py startapp travello   # create a new app called travello
 
+# static content
+python manage.py collectstatic    # collect all the static files in one folder for django
+
+# migration to database and remigration (step no 2 is not done in the video for remigration)
+python manage.py makemigrations   # migrate model to database - file is created
+python manage.py sqlmigrate travello 0001  # migrate model to database - script is created
+python manage.py migrate          # actual migration is done using the script
+
+python manage.py help
+python manage.py createsuperuser
